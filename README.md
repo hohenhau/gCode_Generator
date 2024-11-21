@@ -32,7 +32,7 @@ Using the dynamic pressure measured by the rake, the velocity can easily be calc
 ### 2.2 Tilted Grids
 
 Using the [rgCode_gen_irregular.py](https://github.com/hohenhau/gCode_Generator/blob/main/gCode_gen_irregular.py) and changing the tilt parameters, it is possible to generate a skewed grid. This is particularly useful, if the measured grid needs to line up with a test section that is not perfectly perpendicular.
-![alt text](https://github.com/hohenhau/pressure_evaluatio/blob/main/coordinates_grid_tilted.png?raw=true)
+![alt text](https://github.com/hohenhau/gCode_Generator/blob/main/coordinates_grid_tilted.png)
 
 ## 3. Irregular Grids
 
