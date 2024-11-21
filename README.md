@@ -4,7 +4,7 @@ For my PhD I built a travrse system which could move measurement probes to prede
 
 ![alt text](https://github.com/hohenhau/pressure_evaluatio/blob/main/_process_diagram.png?raw=true)
 
-## 1. Analysis of Multi-Hole Probe Pressures
+## 1. Creating sample points along a line
 
 Multi-Hole Probes are essentially Pitot Tubes with multiple pressure ports. While a Pitot Tube can only estimate the velocity magnitude, the differences in pressure between the ports of a [Multi-Hole Probe](https://www.surreysensors.com/products/digital-seven-hole-probe-system/) allow for the estimation all three velocity components. The script herein is suitable for probes with 5 holes or more.
 
@@ -21,22 +21,22 @@ Once the interpolation has been completed, the velocity components can be comput
 
 Once the velocities have been estimated, the data can be sorted into specific time frames using [run_multi_hole_time_frames.py](https://github.com/hohenhau/pressure_evaluation/blob/main/run_multi_hole_time_frames.py), or assigned to specific coordinates using [run_multi_hole_field.py](https://github.com/hohenhau/pressure_evaluation/blob/main/run_multi_hole_field.py). Optionally, Coordinate-based data can also be graphed.
 
-## 2. Analysis of Pitot Rake Pressures
+## 2. Creating Sample Points along a grid
 
 A [Pitot Rake](https://www.surreysensors.com/products/amprobes/) is simply a series of Pitot Tubes, and is used for a simple and rapid measurement of the flow field. 
 
-### 2.1 Estimating Velocity Magnitudes from Pitot Rakes
+### 2.1 Regular Grids
 
 Using the dynamic pressure measured by the rake, the velocity can easily be calculated using the [run_pitot_rake_velocity.py](https://github.com/hohenhau/pressure_evaluation/blob/main/run_pitot_rake_velocity.py) script. 
 
-### 2.2 Assigning Velocity Magnitudes to Specific Coordinates
+### 2.2 Tilted Grids
 
-Once the velocity has been calculated, the data can be assigned to the correct coordinates using [run_pitot_rake_field.py](https://github.com/hohenhau/pressure_evaluation/blob/main/run_pitot_rake_field.py). Note that it is imperative for the user to set the correct order of the pressure channels and the offset of the tubes in the rake.
+Using the [rgCode_gen_irregular.py](https://github.com/hohenhau/gCode_Generator/blob/main/gCode_gen_irregular.py) and changing the tilt parameters, it is possible to generate a skewed grid. This is particularly useful, if the measured grid needs to line up with a test section that is not perfectly perpendicular.
+![alt text](https://github.com/hohenhau/pressure_evaluatio/blob/main/coordinates_grid_tilted.png?raw=true)
 
-## 3. Analysis of Pressure Tap Data
+## 3. Irregular Grids
 
-Pressure taps usually measure the static pressure in a system, which by itself cannot be used to estimate any flow velocities. Nevertheless, these measurements are still essential to find the energy losses in a system.
-
+asdf
 ### 3.1 Sorting Static Pressures into Distinct Time Frames
 
-Using the [run_pressure_tap_time_frames.py](https://github.com/hohenhau/pressure_evaluation/blob/main/run_pressure_tap_time_frames.py) script, the static pressure measurements can be assigned to specific user-defined time frames at and wind tunnel locations.
+Using the [rgCode_gen_irregular.py](https://github.com/hohenhau/gCode_Generator/blob/main/gCode_gen_irregular.py) script, the static pressure measurements can be assigned to specific user-defined time frames at and wind tunnel locations.
