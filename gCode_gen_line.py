@@ -9,14 +9,14 @@ sample_time = 5                 # wait time in seconds
 buffer_start = 1.5              # pre-sample buffer
 buffer_end = 1.5                # post-sample buffer
 
-start_x = 76 - 0                # initial x coordinate in relation to origin
-end_x = 76 - 0                  # final x coordinate in relation to origin
-start_z = 0 - 8                  # initial z coordinate in relation to origin
-end_z = 681 + 8                  # final z coordinate in relation to origin (was 681)
-points = 175 - 0                 # number of measurement points (was 175)
+start_x = 10                    # initial x coordinate in relation to origin
+end_x = 290                     # final x coordinate in relation to origin
+start_z = 10                    # initial z coordinate in relation to origin
+end_z = 290                     # final z coordinate in relation to origin
+points = 100                    # number of measurement points
 
-origin_x = 37                   # calibrated starting position for x (drela close = 35) (log close = 36)
-origin_z = 38                   # calibrated starting position for z (drela close = 42) (log close = 48)
+origin_x = 0                   # calibrated starting position for x
+origin_z = 0                   # calibrated starting position for z
 
 max_tilt_x = 0                  # tilt in the x direction
 max_tilt_z = 0                  # tilt i the z direction

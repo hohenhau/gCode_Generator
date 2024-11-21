@@ -4,16 +4,16 @@ import numpy as np          # import numpy module
 
 # Specify base parameters and geometry
 
-length_x = 305              # horizontal extent of measured section
-length_z = 305              # vertical extent of measured section
-margin_x = 8                # horizontal clearance
-margin_z = 8                # vertical clearance
+length_x = 280              # horizontal extent of measured section
+length_z = 280              # vertical extent of measured section
+margin_x = 10                # horizontal clearance
+margin_z = 10                # vertical clearance
 points_x = 10               # number of horizontal points
 points_z = 10               # number of vertical points
 wait_time = 20              # wait time in seconds
 
-start_x = 44                # calibrated starting position for x
-start_z = 295               # calibrated starting position for z
+start_x = 0                # calibrated starting position for x
+start_z = 0                # calibrated starting position for z
 
 
 traverse_max_x = 700        # maximum horizontal travel

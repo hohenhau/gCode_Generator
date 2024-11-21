@@ -9,19 +9,19 @@ sample_time = 5                 # wait time in seconds
 buffer_start = 1.5              # pre-sample buffer
 buffer_end = 1.5                # post-sample buffer
 
-start_x = 6                     # initial x coordinate in relation to origin
-end_x = 131                     # final x coordinate in relation to origin
-start_z = 0 - 6.66                    # initial z coordinate in relation to origin (was -7)
-end_z = 681 + 6.66                    # final z coordinate in relation to origin (was +7)
+start_x = 10                    # initial x coordinate in relation to origin
+end_x = 290                     # final x coordinate in relation to origin
+start_z = 10                    # initial z coordinate in relation to origin
+end_z = 290                     # final z coordinate in relation to origin
 
-points_x = 6                    # number of measurement points (was 11)
-points_z = 209                   # number of measurement points (was 88)
+points_x = 21                    # number of measurement points
+points_z = 21                   # number of measurement points
 
-origin_x = 168                   # calibrated starting position for x
-origin_z = 39                   # calibrated starting position for z
+origin_x = 0                    # calibrated starting position for x
+origin_z = 0                    # calibrated starting position for z
 
-max_x_tilt = 0                 # tilt in the x direction
-max_z_tilt = 0                 # tilt i the z direction
+max_x_tilt = 0                  # tilt in the x direction
+max_z_tilt = 0                  # tilt i the z direction
 
 traverse_max_x = 700            # maximum horizontal travel
 traverse_max_z = 820            # maximum vertical travel
@@ -33,8 +33,8 @@ concentrate_x_min = False
 concentrate_x_max = False
 concentrate_z_min = False
 concentrate_z_max = False
-growth_x = 1
-growth_z = 1
+growth_x = 1.2
+growth_z = 1.2
 
 
 # check if concentration settings work
