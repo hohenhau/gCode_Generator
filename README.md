@@ -21,7 +21,7 @@ Once the interpolation has been completed, the velocity components can be comput
 
 Once the velocities have been estimated, the data can be sorted into specific time frames using [run_multi_hole_time_frames.py](https://github.com/hohenhau/pressure_evaluation/blob/main/run_multi_hole_time_frames.py), or assigned to specific coordinates using [run_multi_hole_field.py](https://github.com/hohenhau/pressure_evaluation/blob/main/run_multi_hole_field.py). Optionally, Coordinate-based data can also be graphed.
 
-## 2. Creating Sample Points along a grid
+## 2. Creating Sample Points Over a Grid
 
 A [Pitot Rake](https://www.surreysensors.com/products/amprobes/) is simply a series of Pitot Tubes, and is used for a simple and rapid measurement of the flow field. 
 
@@ -31,12 +31,10 @@ Using the dynamic pressure measured by the rake, the velocity can easily be calc
 
 ### 2.2 Tilted Grids
 
-Using the [rgCode_gen_irregular.py](https://github.com/hohenhau/gCode_Generator/blob/main/gCode_gen_irregular.py) and changing the tilt parameters, it is possible to generate a skewed grid. This is particularly useful, if the measured grid needs to line up with a test section that is not perfectly perpendicular.
+If the grid system needs to line up with a test section with edges that are non-perpendicular, it is possible to skew the coordinate system. This is achieved using the [gCode_gen_irregular.py](https://github.com/hohenhau/gCode_Generator/blob/main/gCode_gen_irregular.py) script and changing the tilt parameters. The result is a skewed grid:
 ![alt text](https://github.com/hohenhau/gCode_Generator/blob/main/coordinates_grid_tilted.png)
 
-## 3. Irregular Grids
+### 2.3 Irregular Grids
 
-asdf
-### 3.1 Sorting Static Pressures into Distinct Time Frames
-
-Using the [rgCode_gen_irregular.py](https://github.com/hohenhau/gCode_Generator/blob/main/gCode_gen_irregular.py) script, the static pressure measurements can be assigned to specific user-defined time frames at and wind tunnel locations.
+In certain cases it might be beneficial to create irregular grids, which are more dense towards the edges, in order to more accurately capture the boundary layer of flow. This is achieved using the [gCode_gen_irregular.py](https://github.com/hohenhau/gCode_Generator/blob/main/gCode_gen_irregular.py) script and changing the growth parameters. The result is an irregular grid:
+![alt text](https://github.com/hohenhau/gCode_Generator/blob/main/coordinates_grid_irregular.png)
