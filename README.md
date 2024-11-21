@@ -27,7 +27,9 @@ A [Pitot Rake](https://www.surreysensors.com/products/amprobes/) is simply a ser
 
 ### 2.1 Regular Grids
 
-Using the dynamic pressure measured by the rake, the velocity can easily be calculated using the [run_pitot_rake_velocity.py](https://github.com/hohenhau/pressure_evaluation/blob/main/run_pitot_rake_velocity.py) script. 
+To create a regular grid of coordinates, one can use the [gCode_gen_regular.py](https://github.com/hohenhau/gCode_Generator/blob/main/gCode_gen_regular.py) or the [gCode_gen_irregular.py](https://github.com/hohenhau/gCode_Generator/blob/main/gCode_gen_irregular.py) scripts. Using the latter to create a regular grid requires setting all tilt and growth parameters to 0. The result is a regular grid:
+
+![alt text](https://github.com/hohenhau/gCode_Generator/blob/main/coordinates_grid_regular.png)
 
 ### 2.2 Tilted Grids
 
